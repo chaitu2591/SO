@@ -1,0 +1,140 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+xmlns:smartTable="sap.ui.comp.smarttable" 
+xmlns:smartFilterBar="sap.ui.comp.smartfilterbar" 
+xmlns:html="http://www.w3.org/1999/xhtml" 
+controllerName="SalesOrder.SO.controller.View2" id="idView2">
+	<App>
+		<pages>
+			<Page title="{i18n>Instance}" showNavButton="true" navButtonPress="onNavBack">
+				<content>
+					<sap.ui.layout.form:SimpleForm title="Header Details" id="__form2" layout="ResponsiveGridLayout" editable="true" xmlns:sap.ui.core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form">
+					<sap.ui.layout.form:content>
+					<Table id="__table0" noDataText="Drop column list items here and columns in the area above">
+						<items>
+						<ColumnListItem id="__item0">
+						<cells>
+						<Input id="__input3" editable="false" width="100%" value="H001" ariaLabelledBy="__label0"/>
+						<Input id="__input4" editable="false" width="100%" value="01" ariaLabelledBy="__label1"/>
+						<Input id="__input5" editable="false" width="100%" value="01" ariaLabelledBy="__label2"/>
+						<Input id="__input6" editable="false" width="100%" value="TA" ariaLabelledBy="__label2"/>
+						<Input id="__input7" width="100%" ariaLabelledBy="__label2"/>
+						<Input id="__input8" width="100%" ariaLabelledBy="__label2"/>
+						</cells>
+						</ColumnListItem>
+						</items>
+					<columns>
+					<Column id="__column0">
+					<header>
+					<Label id="__label0" text="Sales Org"/>
+					</header>
+					</Column>
+					<Column id="__column1">
+					<header>
+					<Label id="__label1" text="Distr Channel"/>
+					</header>
+					</Column>
+					<Column id="__column2">
+					<header>
+					<Label id="__label2" text="Divison"/>
+					</header>
+					</Column>
+					<Column id="__column3">
+					<header>
+					<Label id="__label13" text="Doc Type"/>
+					</header>
+					</Column>
+					<Column id="__column4">
+					<header>
+					<Label id="__label4" text="Purch No"/>
+					</header>
+					</Column>
+					<Column id="__column5">
+					<header>
+					<Label id="__label5" text="Partner No"/>
+					</header>
+					</Column>
+					</columns>
+					</Table>
+					</sap.ui.layout.form:content>
+					</sap.ui.layout.form:SimpleForm>
+					<sap.ui.layout.form:SimpleForm title="Item Details" id="__form3" layout="ResponsiveGridLayout" editable="true" xmlns:sap.ui.core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form">
+					<sap.ui.layout.form:content>
+			<Table id="__table1" noDataText="Drop column list items here and columns in the area above" growing="true" headerText="Item Details">
+				<headerToolbar>
+				<Toolbar>
+				<Button icon="sap-icon://add" press="addRow" text="Add Item"/>
+				<Button icon="sap-icon://delete" press="deleteRow" text="Delete Item"/>
+				</Toolbar>
+				</headerToolbar>
+				<items>
+				<ColumnListItem id="__item2">
+				<cells>
+				<Input id="__input00" width="50%" ariaLabelledBy="__xmlview0--__label7"/>
+				<Input id="__input0" width="70%" ariaLabelledBy="__xmlview0--__label6"/>
+				<Input id="__input1" width="50%" ariaLabelledBy="__xmlview0--__label7"/>
+				<Input id="__input21" width="50%" ariaLabelledBy="__xmlview0--__label7"/>
+				<Input id="__input22" width="50%" ariaLabelledBy="__xmlview0--__label7"/>
+				<Input id="__input23" width="50%" ariaLabelledBy="__xmlview0--__label7"/>
+				<Input id="__input24" width="50%" ariaLabelledBy="__xmlview0--__label7"/>
+				<Input id="__input25" width="50%" ariaLabelledBy="__xmlview0--__label7"/>
+				</cells>
+				</ColumnListItem>
+				</items>
+				<columns>
+					<Column id="__column06">
+					<header>
+					<Label id="__label06" text="Item No"/>
+					</header>
+					</Column>
+					<Column id="__column6">
+					<header>
+					<Label id="__label6" text="Material"/>
+					</header>
+					</Column>
+					<Column id="__column7">
+					<header>
+					<Label id="__label7" text="Plant"/>
+					</header>
+					</Column>
+					<Column id="__column08">
+					<header>
+					<Label id="__label08" text="Storage Location"/>
+					</header>
+					</Column>
+					<Column id="__column8">
+					<header>
+					<Label id="__label8" text="Quantity"/>
+					</header>
+					</Column>
+					<Column id="__column9">
+					<header>
+					<Label id="__label9" text="Gross Weight"/>
+					</header>
+					</Column>
+					<Column id="__column10">
+					<header>
+					<Label id="__label10" text="Net Weight"/>
+					</header>
+					</Column>
+					<Column id="__column11">
+					<header>
+					<Label id="__label11" text="Unit"/>
+					</header>
+					</Column>
+					</columns>
+					</Table>
+					</sap.ui.layout.form:content>
+					</sap.ui.layout.form:SimpleForm>
+				</content>
+				<footer>
+					<Bar id="__bar0" class="sapContrast sapContrastPlus">
+					<contentRight>
+					<Button id="__button8" press="onCreateSO" width="150px" text="Create Sales Order" ariaLabelledBy="__xmlview0--__label7" type="Emphasized"/>
+					</contentRight>
+					</Bar>
+
+</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

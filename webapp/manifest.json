@@ -1,0 +1,155 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "SalesOrder.SO",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"ZRKB_SO_INFO_SRV": {
+				"uri": "/sap/opu/odata/sap/ZRKB_SO_INFO_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/ZRKB_SO_INFO_SRV/metadata.xml"
+
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_belize"]
+	},
+	"sap.ui5": {
+	
+		"rootView": {
+			"viewName": "SalesOrder.SO.view.View1",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.1",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "SalesOrder.SO.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "SalesOrder.SO.view",
+				"controlAggregation": "pages",
+				"controlId": "app",
+				"clearControlAggregation": false
+			},
+			"routes": [{
+				"name": "RouteView1",
+				"pattern": "",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["TargetView1"]
+			}, {
+				"name": "RouteView2",
+				"pattern": "View2",
+				"greedy": false,
+				"titleTarget": "",
+				"target": ["TargetView2"]
+			},
+			{
+				"name": "RouteView3",
+				"pattern": "View3",
+				"greedy": false,
+				"titleTarget": "",
+				"target": ["TargetView3"]	
+			},
+			{
+				"name": "RouteView4",
+				"pattern": "View4",
+				"greedy": false,
+				"titleTarget": "",
+				"target": ["TargetView4"]	
+			}
+			],
+			"targets": {
+				"TargetView1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": true,
+					"viewName": "View1",
+					"viewLevel": 1,
+					"controlAggregation": "pages"
+				},
+				"TargetView2": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "View2",
+					"viewLevel": 2,
+					"controlAggregation": "pages"
+				},
+					"TargetView3": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": true,
+					"viewName": "View3",
+					"viewLevel": 3,
+					"controlAggregation": "pages"
+				},
+				"TargetView4": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "View4",
+					"viewLevel": 4,
+					"controlAggregation": "pages"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+<mvc:View controllerName="SalesOrder.SO.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"  xmlns:html="http://www.w3.org/1999/xhtml">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<TileContainer class="tile_container_class" id="container1">
+						<tiles>
+							<StandardTile class="tile_class1" icon="sap-icon://create" type="Monitor" number="1" title="Create" info="" id="tile0" press="onCreate"/>
+							<StandardTile class="tile_class2" icon="sap-icon://edit" type="Monitor" number="2" title="Edit" info="" id="tile1" press="onEdit"/>
+							<StandardTile class="tile_class3" icon="sap-icon://display" type="Monitor" number="3" title="Display" info="" id="tile2" press="onDisplay"/>
+						</tiles>
+						</TileContainer>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

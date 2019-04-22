@@ -1,0 +1,15 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+xmlns:smartTable="sap.ui.comp.smarttable" 
+xmlns:smartFilterBar="sap.ui.comp.smartfilterbar" 
+xmlns:html="http://www.w3.org/1999/xhtml" 
+controllerName="SalesOrder.SO.controller.View3" id="idView3">
+	<App>
+		<pages>
+			<Page title="{i18n>Instance1}" showNavButton="true" navButtonPress="onNavBack">
+				<content>
+				
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
